@@ -250,7 +250,7 @@ static Token string()
   return makeToken(TOKEN_STRING);
 }
 
-Token scanToken()
+Token scanToken(void)
 {
   skipWhitespace();
   scanner.start = scanner.current;
