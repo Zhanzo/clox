@@ -245,12 +245,12 @@ static Token string()
     return errorToken("Unterminated string.");
   }
 
-  // The closin quote.
+  // The closing quote.
   advance();
   return makeToken(TOKEN_STRING);
 }
 
-Token scanToken(void)
+Token scanToken()
 {
   skipWhitespace();
 

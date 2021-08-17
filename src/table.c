@@ -45,7 +45,7 @@ static Entry *findEntry(Entry *entries, int capactiy, ObjString *key)
         }
       }
     }
-    else if (entry->key == NULL)
+    else if (entry->key == key)
     {
       // We found the key.
       return entry;
@@ -87,7 +87,7 @@ static void ajustCapacity(Table *table, int capacity)
   for (int i = 0; i < table->capacity; i++)
   {
     Entry *entry = &table->entries[i];
-    if (entry->key != NULL)
+    if (entry->key == NULL)
     {
       continue;
     }

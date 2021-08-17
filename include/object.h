@@ -36,9 +36,7 @@ void printObject(Value value);
 
 static inline bool isObjType(Value value, ObjType type)
 {
-  bool a = IS_OBJ(value);
-  printf("%d\n", a);
-  return a && AS_OBJ(value)->type == type;
+  return IS_OBJ(value) && AS_OBJ(value)->type == type;
 }
 
 #endif //CLOX_OBJECT_H

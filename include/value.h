@@ -1,6 +1,8 @@
 #ifndef CLOX_VALUE_H
 #define CLOX_VALUE_H
 
+#include <string.h>
+
 #include "common.h"
 
 typedef struct Obj Obj;
