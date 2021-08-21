@@ -10,4 +10,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
+#undef DEBUG_PRINT_CODE
+#undef DEBUG_TRACE_EXECUTION
+
 #endif //CLOX_COMMON_H
